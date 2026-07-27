@@ -2,10 +2,10 @@ import { OPTION_LABELS } from "@/lib/contract";
 
 interface ResultsBarProps {
   results: number[] | null;
-  loading: boolean;
+  live: boolean;
 }
 
-export function ResultsBar({ results, loading }: ResultsBarProps) {
+export function ResultsBar({ results, live }: ResultsBarProps) {
   const counts = results ?? [0, 0, 0];
   const total = counts.reduce((sum, count) => sum + count, 0);
 
@@ -13,7 +13,7 @@ export function ResultsBar({ results, loading }: ResultsBarProps) {
     <div className="flex flex-col gap-3 rounded-lg border border-border bg-surface px-4 py-5">
       <div className="flex items-center gap-2">
         <h2 className="text-sm font-medium text-foreground-dim">Results</h2>
-        {!loading && (
+        {live && (
           <span className="flex items-center gap-1 text-xs text-accent">
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" />
             live
