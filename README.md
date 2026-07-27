@@ -8,8 +8,7 @@ Built for the Stellar Yellow Belt (Level 2) submission.
 
 ## Live demo
 
-<!-- TODO: add the Vercel URL after deploying, e.g. https://boto-stellar.vercel.app -->
-`<Vercel URL — pending deploy>`
+[boto-stellar.vercel.app](https://boto-stellar.vercel.app)
 
 ## Deployed contract
 
